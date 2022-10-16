@@ -47,12 +47,11 @@ swim_zuege = pd.DataFrame(swim_data["Züge"])
 swim_HR= pd.DataFrame(swim_data["HR"])
 
 
-
+# Header
 st.header("IronData 🦿")
 
-
+# Run Section
 st.markdown("### Run 🏃🏽")
-
 
 st.line_chart(run_pace)
 
@@ -63,7 +62,7 @@ with col3_run:
     st.line_chart(run_HR)
 
 
-
+# Bike Section
 st.markdown("### Bike 🚴🏽")
 st.line_chart(bike_average_watts)
 
@@ -74,8 +73,8 @@ with col3_bike:
     st.line_chart(bike_HR)
 
 
+# Swim Section
 st.markdown("### Swim 🏊🏽‍♂️")
-
 st.line_chart(swim_pace)
 
 col2_bike, col3_bike = st.columns(2)
