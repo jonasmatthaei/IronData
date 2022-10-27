@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Raw Dataset
+# Raw Data
 df = pd.read_csv (r'irondata.csv')
 
 # Run
